@@ -3,17 +3,22 @@ const dateFormat = require('../utils/dateFormat');
 
 const UserSchema = new Schema(
   {
-    userName: {
-      type: String,
-      unique: true, 
-      required: true,
-      trim: true
-    },
-    userEmail: {
+    username: {
       type: String,
       unique: true,
-      required: true,
-      trim: true
+      trim: true,
+      required: 'Username is Required',
+    },
+    email: {
+      type: String,
+      unique: true,
+      required: 'Email is Required',
+      match: [/.+@.+\..+/]
+    },
+    userCreated: {
+      type: Date,
+      default: Date.now,
+      get: createdAtVal => dateFormat(createdAtVal)
     },
     thoughts: [
       {
@@ -44,7 +49,7 @@ UserSchema.virtual('friendCount').get(function() {
 });
 
 // create the User model using the UserSchema
-const Pizza = model('User', UserSchema);
+const User = model('User', UserSchema);
 
 // export the User model
 module.exports = User;
