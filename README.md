@@ -17,9 +17,9 @@
   <a name='usefaq'></a>
   ## Usage
   
-  AS A social media startup
-  I WANT an API for my social network that uses a NoSQL database
-  SO THAT my website can handle large amounts of unstructured data
+  AS A social media startup I WANT an API for my social network that uses a NoSQL database SO THAT my website can handle large amounts of unstructured data.
+  
+  A video of the api routes being tested with insomnia can be found [Here](https://drive.google.com/file/d/1Oi07uayLgsLtwlsJ6f79NkJRPSgCTvGD/view).
 
   
 
