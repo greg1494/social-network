@@ -30,7 +30,7 @@
   2. Clone the repo to your local machine
   3. Install the dependencies with `npm i`
   4. Run the command `npm start` to run the server
-  5. Use [Insomnia](https://insomnia.rest)
+  5. Use [Insomnia](https://insomnia.rest) to test the api routes
 
   <a name='license'></a>
   ## License
